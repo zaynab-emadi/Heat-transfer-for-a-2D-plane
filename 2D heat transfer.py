@@ -15,7 +15,7 @@ iteration = 20000
 node_x = int((width + delta) / delta) + 1
 node_y = int((height + delta) / delta) + 1
 
-u = np.zeros((node_y, node_x)) + initial_temp  # plat is initially at 100 degrees c
+u = np.full((node_y, node_x), initial_temp)   # plat is initially at 100 degrees c
 
 # boundary condition
 u[0, :] = 100
